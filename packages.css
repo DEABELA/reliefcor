@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600&display=swap');
+body {
+    background-color: #333;
+    position: relative;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+    color: white;
+}
+
+.fas-fa-music {
+    color: #191716;
+}
+
+.fa-times {
+    color: #191716;
+}
+
+
+
+.heading {
+    color: aliceblue;
+}
+
+.buttons :first-child:hover {
+    background: rgba(255, 0, 0, 0.514);
+}
+
+.buttons a:hover {
+    background: rgba(0, 0, 255, 0.555);
+}
+
+
+.icons-container {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.icons-container .icons {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+}
+
+.icons-container .icons i {
+    height: 6rem;
+    width: 6rem;
+    line-height: 6rem;
+    font-size: 2.5rem;
+    border-radius: 50%;
+    background: #011638;
+    text-align: center;
+}
+
+.icons-container .icons .free h3 {
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+}
+
+.icons-container .icons .free p {
+    color: rgb(255, 255, 255);
+    font-size: 2.5rem;
+}
+
+.icons-container .icons:hover {
+    background: #011638;
+}
+
+.icons-container .icons:hover i {
+    color: var(--white);
+    background: black;
+}
+
+.icons-container .icons:hover h3 {
+    color: rgb(0, 0, 0);
+}
+
+.icons-container .icons:hover p {
+    color: rgb(0, 0, 0);
+}
+
+

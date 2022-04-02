@@ -1,0 +1,413 @@
+            @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+             :root {
+                --yellow: #9CAFB7;
+                --light-yellow: #ffee80;
+                --black: #5E5768;
+                --light-color: #5E5768;
+                --white: #fff;
+                --border: .1rem solid rgba(0, 0, 0, .1);
+                --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+            }
+            
+            * {
+                font-family: 'Raleway', sans-serif;
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                outline: none;
+                border: none;
+                text-transform: capitalize;
+                transition: .2s linear;
+            }
+            
+            html {
+                font-size: 62.5%;
+                overflow-x: hidden;
+                scroll-padding-top: 7rem;
+                scroll-behavior: smooth;
+            }
+            
+            body {
+                background-color: #5E5768;
+                position: relative;
+                line-height: 1.5;
+                font-family: 'Poppins', sans-serif;
+            }
+            
+            .heading {
+                text-align: center;
+                padding-bottom: 3rem;
+                font-size: 300%;
+            }
+            
+            .heading span {
+                position: relative;
+                z-index: 0;
+            }
+            
+            .heading span::before {
+                content: '';
+                position: absolute;
+                bottom: 1rem;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                z-index: -1;
+                background: #9CAFB7;
+                clip-path: polygon(0 90%, 100% 80%, 100% 100%, 0% 100%);
+            }
+            
+            
+            .home {
+                padding-top: 3rem;
+                padding-right: -2rem;
+                text-align: center;
+                overflow: hidden;
+            }
+            
+            .home h1 {
+                font-size: 4.5vw;
+                text-transform: uppercase;
+                color: rgb(255, 255, 255);
+            }
+            
+            .home img {
+                width: 100%;
+                margin: 1rem 0;
+            }
+            
+            .icons-container {
+                background-color: #5E5768;
+                padding-top: 5rem;
+                padding-bottom: 5rem;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+                gap: 1.5rem;
+            }
+            
+            .icons-container .icons {
+                display: flex;
+                align-items: center;
+                gap: 1.5rem;
+                padding: 2rem;
+                box-shadow: var(--box-shadow);
+                border-radius: .5rem;
+            }
+            
+            .icons-container .icons i {
+                height: 6rem;
+                width: 6rem;
+                line-height: 6rem;
+                font-size: 2.5rem;
+                border-radius: 50%;
+                background: #011638;
+                text-align: center;
+            }
+            
+            .icons-container .icons .free h3 {
+                color: rgb(255, 255, 255);
+                font-size: 2rem;
+            }
+            
+            .icons-container .icons .free p {
+                color: rgb(255, 255, 255);
+                font-size: 2.5rem;
+            }
+            
+            .icons-container .icons:hover {
+                background: #011638;
+            }
+            
+            .icons-container .icons:hover i {
+                color: var(--white);
+                background: black;
+            }
+            
+            .icons-container .icons:hover h3 {
+                color: rgb(0, 0, 0);
+            }
+            
+            .icons-container .icons:hover p {
+                color: rgb(0, 0, 0);
+            }
+            
+            .group {
+                background-color: #333;
+            }
+            
+            .contact {
+                background-color: #333;
+                padding-top: -10rem;
+            }
+            
+            .contact .row {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 1.5rem;
+            }
+            
+            .contact .row .map {
+                flex: 1 1 42rem;
+                width: 100%;
+                padding: 2rem;
+                padding-left: 3rem;
+                margin: 0 auto;
+                padding-top: -5rem;
+                border: var(--border);
+                border-radius: .5rem;
+                box-shadow: var(--box-shadow);
+            }
+            
+            .contact .row form {
+                flex: 1 1 42rem;
+                padding: 3rem;
+                border: var(--border);
+                border-radius: .5rem;
+                box-shadow: var(--box-shadow);
+                text-align: center;
+            }
+            
+            .contact .row form h3 {
+                font-size: 3rem;
+                color: white;
+            }
+            
+            .contact .row form .box {
+                margin: 2rem 0;
+                width: 90%;
+                border: var(--border);
+                padding: 1rem;
+                font-size: 1.6rem;
+                color: rgb(0, 0, 0);
+                text-transform: none;
+                border-radius: .5rem;
+            }
+            
+            .contact .row form textarea {
+                height: 15rem;
+                resize: none;
+            }
+            
+            
+            
+            @media(max-width:991px) {
+                html {
+                    font-size: 55%;
+                }
+                .header {
+                    padding: 2rem;
+                }
+                .header.active {
+                    padding: 2rem;
+                }
+                section {
+                    padding: .01rem;
+                }
+            }
+            
+            .group .group {
+                border-color: #191716;
+            }
+           
+            
+            .box1 {
+                padding-left: 5rem;
+                padding-top: 2rem;
+                padding-bottom: 3rem;
+                font-size: 150%;
+                color: white;
+                gap: 1.5rem;
+            }
+            
+            .box {
+                padding-left: 5rem;
+                padding-top: 2rem;
+                padding-bottom: 3rem;
+                font-size: 150%;
+                color: white;
+                gap: 1.5rem;
+            }
+            
+            @media(max-width:450px) {
+                html {
+                    font-size: 50%;
+                }
+            }
+            
+            .box1 .a {
+                color: white;
+            }
+            
+            .netflixpackages {
+                margin-bottom: -5rem;
+            }
+            
+            .map {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .container {
+                max-width: 1170px;
+                margin: auto;
+            }
+            
+            .rows {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            
+            ul {
+                list-style: none;
+            }
+          
+            .mid {
+                background-color: #333;
+            }
+            
+            .blob {
+                width: 150%;
+                height: 150%;
+                padding-right: 100rem;
+            }
+            
+            .abpar {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 150%;
+            }
+            
+            .abpar1 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 150%;
+            }
+            
+            .mid1 {
+                padding-left: 75rem;
+                color: #797596;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-size: 200%;
+                position: relative;
+            }
+            /* second table */
+            
+            .styled-table {
+                border-collapse: collapse;
+                margin: 25px 0;
+                font-size: 0.9em;
+                font-family: sans-serif;
+                min-width: 400px;
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+            }
+            
+            .styled-table thead tr {
+                background-color: #009879;
+                color: #ffffff;
+                text-align: left;
+            }
+            
+            .styled-table th,
+            .styled-table td {
+                padding: 12px 15px;
+            }
+            
+            .styled-table tbody tr {
+                border-bottom: 1px solid #dddddd;
+            }
+            
+            .styled-table tbody tr:nth-of-type(even) {
+                background-color: #f3f3f3;
+            }
+            
+            .styled-table tbody tr:last-of-type {
+                border-bottom: 2px solid #009879;
+            }
+            
+            .styled-table tbody tr.active-row {
+                font-weight: bold;
+                color: #009879;
+            }
+            /* first table */
+            
+            .styled-table1 {
+                border-collapse: collapse;
+                margin: 25px 0;
+                font-size: 0.9em;
+                font-family: sans-serif;
+                min-width: 400px;
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+            }
+            
+            .styled-table1 thead tr {
+                background-color: #800020;
+                color: #ffffff;
+                text-align: left;
+            }
+            
+            .styled-table1 th,
+            .styled-table1 td {
+                padding: 12px 15px;
+            }
+            
+            .styled-table1 tbody tr {
+                border-bottom: 1px solid #dddddd;
+            }
+            
+            .styled-table1 tbody tr:nth-of-type(even) {
+                background-color: #f3f3f3;
+            }
+            
+            .styled-table1 tbody tr:last-of-type {
+                border-bottom: 2px solid #800020;
+            }
+            
+            .styled-table1 tbody tr.active-row1 {
+                font-weight: bold;
+                color: #800020;
+            }
+            
+            .abtab {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            @media(max-width: 780px) {
+                .middle {
+                    width: 50%;
+                    margin-bottom: 30px;
+                }
+            }
+            
+            @media(max-width: 574px) {
+                .middle {
+                    width: 100%;
+                }
+            }
+            
+            @media(max-width: 780px) {
+                .abtab {
+                    padding-left: 2rem;
+                    padding-right: 2rem;
+                }
+                .mid1 {
+                    right: 60rem;
+                    display: flex;
+                    justify-content: baseline;
+                    font-size: 150%;
+                }
+                .abpar {
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    margin-left: 20px;
+                    margin-right: 20px;
+                }
+                .abpar1 {
+                    padding-left: 21rem;
+                }
+            }
